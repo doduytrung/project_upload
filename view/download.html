@@ -1,0 +1,89 @@
+<html>
+    <head>
+	<link href="public/icon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="public/css/main.css">        
+    </head>
+
+    <body backgroud="public/icon/bg2.png">
+
+	<div class="container">
+  		<h1>
+			<span class="main_title">File Hosting Service</span>
+		</h1>
+	</div>
+
+
+        <div class="container">
+	<div style="display:inline-block">
+            <!-- Left Box -->
+            <div class="box">
+                <div class="title text-uppercase"><span>Download File</span></div>
+                   <div id="downloadForm">
+			<br/>
+			<div id="divCaptcha" style="display:inline-block;" class="g-recaptcha" data-sitekey="6LduawUTAAAAAL1rFi5XlmhTIOe3h5XCUu6TV91Z"></div>
+			<br/>
+			<div id="divPass" class="hide" style="text-align:left;padding:20">
+				Password for download:<br/>
+				<input type="password" class="form-control input-sm" name="password" id="password" />
+			</div>			
+			<br/><br/><br/>
+			<button class="btn-danger text-uppercase" id="btnDownloadFile" name="btnDownloadFile">Start Download</button>                    
+		  </div>              
+		
+                <div class="alert"></div>                
+
+            </div>
+            <!-- / Left Box -->
+
+            <!-- Right Box -->
+            <div class="box">
+                <div class="title text-uppercase"><span id="box_title">File Info</span></div>
+                <div id="fileinfo">
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr><td>File name:<br/>
+                                    <span class="text-uppercase" id="filename">&nbsp;</span>
+                                </td></tr>
+                            <tr><td>File size:<br/>
+                                    <span class="text-uppercase" id="filesize">&nbsp;</span>
+                                </td></tr>
+			    <tr><td>File type:<br/>
+                                    <span class="text-uppercase" id="filetype">&nbsp;</span>
+                                </td></tr>
+			    <tr><td>File description:<br/>
+                                    <span class="text-uppercase" id="filedesc">&nbsp;</span>
+                                </td></tr>
+			    <tr><td>Password protection:<br/>
+                                    <span class="text-uppercase" id="filepass">&nbsp;</span>
+                                </td></tr>
+		         </tbody>
+                    </table>	
+                </div>
+            </div>
+
+            <!-- / Right Box -->
+	</div>
+        </div>
+        <!-- /Container -->
+
+	<!-- Share Box -->  
+        <div id="share" style="width:100%;margin:20;float:left">
+            <div class="padding-tabs">
+                <p>Share link:</p>
+                <div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://filepi.com/" addthis:title="FilePi" addthis:description="File Hosting Service"><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_google_plusone_share"></a><a class="addthis_button_reddit"></a><a class="addthis_button_scoopit"></a><a class="addthis_button_blogger"></a>      <a class="addthis_button_myspace"></a><a class="addthis_button_pinterest_share"></a><a class="addthis_button_digg"></a><a class="addthis_button_wordpress"></a><a class="addthis_button_delicious"></a><a class="addthis_button_email"></a><a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a></div>  
+            </div>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51af43c37ed9efb7"></script>
+        </div>
+        <!-- /Share Box -->
+
+        
+    </body>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.3.0/bootbox.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script type="text/javascript" src="public/js/download.js"></script>
+
+</html>

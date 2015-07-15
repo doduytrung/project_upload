@@ -1,0 +1,11 @@
+module.exports={
+	SERVER_PORT:"3000",
+	SERVER_ADDR:"127.0.0.1",	
+	DB_PORT:"27017",
+	DB_ADDR:"127.0.0.1",
+	DB_NAME:"dbfiles",
+	COL_NAME:"files",
+	UPLOAD_FOLDER:"upload",
+	UPLOAD_SIZE:"3*1024*1024",	
+	SECRET_KEY:"6LduawUTAAAAAKpHmOsNXyhawl09PcH3iVJPhUzV"
+}

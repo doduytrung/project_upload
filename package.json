@@ -1,0 +1,21 @@
+{
+  "name": "project_upload",
+  "version": "1.0.0",
+  "description": "Simple Upload File",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "upload",
+    "file"
+  ],
+  "author": "Do Duy Trung",
+  "license": "FREE",
+  "repository": {},
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "express": "^4.12.3",
+    "multer": "^0.1.8"
+  }
+}
